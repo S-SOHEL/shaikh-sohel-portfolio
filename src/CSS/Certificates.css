@@ -1,0 +1,134 @@
+:root {
+  --accent: #007bff;
+  --bg-card: #111;
+  --bg-cert: #1a1a1a;
+  --text-main: #ffffff;
+  --text-muted: #bbbbbb;
+}
+
+/* SECTION */
+.certs-section {
+  padding: 40px 0;
+}
+
+/* MAIN CARD */
+.certs-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/* HEADING */
+.certs-card h2 {
+  font-size: 1.8rem;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.certs-card .lead {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* TABS */
+.certs-tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.certs-tabs .tab {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.certs-tabs .tab.active {
+  background: var(--accent);
+}
+
+/* GRID */
+.certs-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CERT CARD */
+.cert.card {
+  background: var(--bg-cert);
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE */
+.cert.card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.cert.card strong {
+  font-size: 16px;
+}
+
+/* SUBTEXT */
+.cert.card .muted {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* BUTTON */
+.cert.card .btn {
+  margin-top: auto;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s;
+}
+
+.cert.card .btn:hover {
+  opacity: 0.85;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .cert.card img {
+    height: 140px;
+  }
+}

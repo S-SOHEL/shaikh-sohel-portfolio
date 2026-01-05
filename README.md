@@ -6,7 +6,7 @@ This portfolio showcases my projects, skills, experience, and journey as a **Ful
 ---
 
 ## 🌐 Live Website
-🚀 (Will be updated after deployment on Vercel)
+🚀 https://shaikh-sohel-portfolio.vercel.app/
 
 ---
 
@@ -21,7 +21,7 @@ This portfolio showcases my projects, skills, experience, and journey as a **Ful
 ### Contact Section
 ![Contact](screenshots/contact.png)
 
-> 📌 Make sure these images exist inside the `screenshots/` folder.
+
 
 ---
 
